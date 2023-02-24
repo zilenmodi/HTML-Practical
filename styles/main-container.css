@@ -27,6 +27,10 @@
     background-color: #fff;
     height: 100%;
     display: flex;
+    /* overflow-y: auto; */
+}
+
+.horizontal-bar-items-scroll {
     overflow-y: auto;
 }
 
@@ -182,4 +186,61 @@ hr {
         gap: 10px;
         margin: 10px 16px;
     }
+}
+
+
+
+/* ------------------------- Curosol -------------------------- */
+
+.wrapper {
+    display: flex;
+    max-width: 100%;
+    position: relative;
+}
+
+.wrapper i {
+    top: 50%;
+    height: 100px;
+    width: 45px;
+    color: #343F4F;
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+    text-align: center;
+    line-height: 100px;
+    background: #fff;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper i:active {
+    transform: translateY(-50%) scale(0.9);
+}
+
+.wrapper i:hover {
+    background: #f2f2f2;
+}
+
+.wrapper i:first-child {
+    left: 0px;
+    display: none;
+}
+
+.wrapper i:last-child {
+    right: 0px;
+}
+
+.wrapper .carousel {
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+
+.carousel.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
 }

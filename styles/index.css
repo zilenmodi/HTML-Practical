@@ -8,6 +8,13 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.4;
     background-color: #f1f3f6;
+
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
 }
 
 .container {

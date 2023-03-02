@@ -1,0 +1,176 @@
+.navbar {
+    background-color: #2874f0;
+    width: 100%;
+    min-height: 56px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.brand-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.brand-logo {
+    width: 4.6rem;
+}
+
+.brand-plus {
+    display: flex;
+}
+
+.brand-plus-title {
+    font-size: 11px;
+    font-style: italic;
+    color: #F0F0F0;
+}
+
+.brand-plus-title-yellow {
+    font-weight: 500;
+    color: #FFE500;
+}
+
+.brand-plus-logo {
+    width: 10px;
+    height: 10px;
+    margin-left: 2px;
+}
+
+.searchbar-container {
+    margin-left: 16px;
+    width: 564px;
+    border-radius: 2px;
+}
+
+.searchbar {
+    display: flex;
+    width: 100%;
+    background-color: #FFF;
+    height: 2.25rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.searchbar-input {
+    padding: 0 16px;
+    border: 0;
+    outline: 0 none;
+    font-size: 14px;
+    height: 2.25rem;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.searchbar-icon {
+    background-color: #fff;
+    width: 44px;
+    height: 2.25rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2874f0;
+    border-radius: 2px;
+}
+
+.navbar-login {
+    margin: 0 20px;
+}
+
+.navbar-login-button {
+    outline: 0;
+    color: #2874f0;
+    font-weight: 700;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    height: 32px;
+    padding: 5px 40px;
+    border: 1px solid #dbdbdb;
+    letter-spacing: .1px;
+}
+
+.navbar-more {
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.navbar-more-title,
+.navbar-cart-title {
+    color: #FFF;
+    letter-spacing: .1px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.navbar-down-icon {
+    margin-left: 8px;
+    color: #FFF;
+    font-size: 20px;
+    position: absolute;
+    right: -20px;
+    top: -1px;
+}
+
+.navbar-cart {
+    margin: 0 20px 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-cart-icon {
+    margin-right: 8px;
+    color: #FFF;
+}
+
+.navbar-menus,
+.navbar-brand-search {
+    display: flex;
+}
+
+.navbar-hr {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .searchbar-container {
+        margin-left: 16px;
+        width: 360px;
+        margin-right: 16px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+        min-height: 112px;
+    }
+
+    .navbar-hr {
+        display: block;
+        width: 100%;
+    }
+
+    .searchbar-container {
+        margin-left: 16px;
+        width: 304px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .searchbar-container {
+        width: 100%;
+    }
+}

@@ -1,0 +1,246 @@
+.main-container {
+    width: 100%;
+}
+
+.horizontal-bar-items-section {
+    width: 86%;
+    margin: 14px auto;
+    display: flex;
+}
+
+.horizontal-bar-items-with-card {
+    width: 85%;
+    background-color: #fff;
+    height: 100%;
+    border-radius: 3px;
+}
+
+.horizontal-bar-items-without-card {
+    width: 100%;
+    background-color: #fff;
+    height: 100%;
+    border-radius: 3px;
+}
+
+.horizontal-bar-items {
+    width: 100%;
+    background-color: #fff;
+    height: 100%;
+    display: flex;
+    /* overflow-y: auto; */
+}
+
+.horizontal-bar-items-scroll {
+    overflow-y: auto;
+}
+
+.horizontal-bar-header1 {
+    min-height: 62px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 16px;
+    justify-content: space-between;
+}
+
+.horizontal-bar-header-typo1 {
+    display: flex;
+    gap: 10px;
+
+}
+
+.horizontal-bar-header-heading {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.horizontal-bar-header-subheading1 {
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 0.7;
+    align-self: center;
+}
+
+.clock-icon {
+    align-self: center;
+    margin-left: 12px;
+}
+
+hr {
+    opacity: 0.3;
+}
+
+.viewall-btn {
+    background-color: #2874f0;
+    color: #fff;
+    border: none;
+    display: inline-block;
+    border-radius: 2px;
+    padding: 10px 24px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: box-shadow .2s ease;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+}
+
+.horizontal-bar-header2 {
+    min-height: 75px;
+    display: flex;
+    margin: 0 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.horizontal-bar-header-typo2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+}
+
+.horizontal-bar-header-subheading2 {
+    font-size: 15px;
+    font-weight: 300;
+    opacity: 0.5;
+}
+
+.horizontal-bar-item-card {
+    padding: 30px 22px;
+    display: inline-block;
+    max-height: 366px;
+    text-align: center;
+}
+
+.hb-item-card-img {
+    width: 160px;
+    height: 160px;
+    margin: auto;
+}
+
+.hb-item-card-img>img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.hb-item-card-typo-heading {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hb-item-card-typo-subheading1 {
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #388e3c;
+    padding-top: 8px;
+}
+
+.hb-item-card-typo-subheading2 {
+    opacity: .6;
+    padding-top: 7px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+
+.horizontal-bar-card {
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/278/278/image/86e6d52663901503.jpg?q=90);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 375px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 14px;
+    flex: 1;
+    margin-left: 14px;
+    background-color: #fff;
+}
+
+@media only screen and (max-width: 1350px) {
+    .horizontal-bar-items-with-card {
+        width: 100%;
+    }
+
+    .horizontal-bar-card {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .horizontal-bar-header1,
+    .horizontal-bar-header2 {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+        margin: 10px 16px;
+    }
+}
+
+
+
+/* ------------------------- Curosol -------------------------- */
+
+.wrapper {
+    display: flex;
+    max-width: 100%;
+    position: relative;
+}
+
+.wrapper i {
+    top: 50%;
+    height: 100px;
+    width: 45px;
+    color: #343F4F;
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+    text-align: center;
+    line-height: 100px;
+    background: #fff;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper i:active {
+    transform: translateY(-50%) scale(0.9);
+}
+
+.wrapper i:hover {
+    background: #f2f2f2;
+}
+
+.wrapper i:first-child {
+    left: 0px;
+    display: none;
+}
+
+.wrapper i:last-child {
+    right: 0px;
+}
+
+.wrapper .carousel {
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+
+.carousel.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
